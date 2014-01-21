@@ -157,65 +157,6 @@ public class CameraTest extends Activity {
 		    			}catch(IOException e){
 		    	    	  
 		    			}
-/*for sending*/
-/*		    	try{
-		    		  Intent intent = getIntent();
-		              Bundle data = intent.getExtras();
-		              ipname = data.getString("ipname");
-		    	      //String server=ed.getText().toString();
-		    	      int servPort = 6001;
-		    	      Socket socket = new Socket(ipname,servPort);
-		    	      InputStream in = socket.getInputStream();
-		    	      OutputStream out = socket.getOutputStream();
-		    	      str1 = "connected.....";
-		    	      try{
-		                    doStep1();
-		                    Thread.sleep(300);
-		                    Message msg = new Message();
-		                    msg.what = 123;
-		                    uiMessageHandler.sendMessage(msg);
-		                }catch (Exception e){
-		                    e.printStackTrace();
-		                }
-		    	      
-		    	      while(true){
-		    	    	  Thread.sleep(1000);
-		    	    	  if(flag == 1){
-				    	      str_rec = "Sending.....";
-				    	      
-				    	      try{
-				                    doStep1();
-				                    Thread.sleep(300);
-				                    Message msg = new Message();
-				                    msg.what = 123;
-				                    uiMessageHandler.sendMessage(msg);
-				                }catch (Exception e){
-				                    e.printStackTrace();
-				                }
-				    	      
-				    	      // 送出字串
-				              out.write("5678".getBytes());
-				              out.flush();
-				              out.close();
-				              out = null;
-				              socket.close();
-				              
-				              str_rec = "End Sending.....";
-				              try{
-				                    doStep1();
-				                    Thread.sleep(30);
-				                    Message msg = new Message();
-				                    msg.what = 123;
-				                    uiMessageHandler.sendMessage(msg);
-				                }catch (Exception e){
-				                    e.printStackTrace();
-				                }
-				              flag = 0;
-		    	    	  }
-		    	      }
-	    	      }catch(Exception e){
-	    	       System.out.println("Error: "+e.getMessage());
-	    	      }*/
 		    }
 		};
 		
