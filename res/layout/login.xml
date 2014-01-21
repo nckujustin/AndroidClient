@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/loginForm"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	>
+
+<TableRow>    	
+<TextView
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="IP:"
+	android:textSize="10pt"
+	/>
+<!-- Input Dialog -->
+<EditText
+    android:id="@+id/ipedittext"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:digits="0123456789."
+	android:hint="input your home server ip"
+	android:selectAllOnFocus="true"
+	/>
+</TableRow>
+
+</TableLayout>
