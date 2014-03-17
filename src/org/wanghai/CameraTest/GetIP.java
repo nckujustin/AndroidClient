@@ -38,7 +38,7 @@ public class GetIP extends Activity {
 				public void onClick(DialogInterface dialog, int which) {
 					// seting the login information
 					//ipname = iptext.getText().toString().trim();
-					ipname = "140.116.164.19";
+					ipname = "0.0.0.0";
 					Bundle data = new Bundle();
 					data.putString("ipname",ipname);					
 					Intent intent = new Intent(GetIP.this,CameraTest.class);
